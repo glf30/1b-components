@@ -106,7 +106,7 @@ function App() {
 
 ## Create Child Components
 
-Let's create components for the Header, Sidebar, and Main content areas.
+Let's create components for the Header, Sidebar, and Main content areas inside a Components folder.
 
 17. From the File Explorer in the left panel, **right-click** on the **/src/** folder inside your project. Select **New File** and name the file `Header.jsx`.
 
