@@ -8,18 +8,7 @@ We are going to make a goldfish forum website page by combining different compon
 
 ## Set Up a New React Project
 1. **Set Up Your Project:**
-
-- Open the terminal to the `exercise` directory--the simplest way to do so is to right-click on the `exercise` folder in VS Code and select "Open in Integrated Terminal".
-
-- In the terminal, type `npm create vite .` and hit enter/return. The `.` is important--this will create a new Vite project in the current directory.
-
-- It will warn you that there are files here currently. Use the arrow keys and Enter/Return to select "Ignore files and continue". This allows us to keep our readme and any data/assets files we have in our new project folder.
-
-- Choose React and then JavaScript from the following menus, using arrow keys and Enter/Return.
-
-- Install dependencies by entering `npm install` in the terminal.
-
-- Run the app by typing `npm run dev` in the terminal. This will provide a clickable link to open the app in your default browser, or you can navigate to the localhost URL in your browser.
+Create a new project with `npm create vite@latest`
 
 ## Install Bootstrap
 
@@ -34,45 +23,6 @@ We are going to make a goldfish forum website page by combining different compon
 7. Move the image files from the `assets` folder outside the project folder into the folder `public/`--this way the images will be accessible to your application.
 
 **Each image should be in the `public` folder _directly_**, not in any other intermediate folder (not even in the `assets` folder)
-
-## Creating the App Component
-
-10. Open **/src/App.jsx**. This file is an example component that React starts with. You can delete everything in this file. Then, at the top of the file, you can import React and create a functional component called App. Finally, export it at the bottom. This will create the following code:
-
-```jsx
-import React from 'react';
-
-function App() {
-  return (  );
-}
-
-export default App;
-```
-
-11. Write `<div>Hello World</div>` inside the `return` that is inside the App component.
-
-12. Let's visit the **/src/main.jsx** file and look at how we are passing our component to ReactDOM to be rendered.
-
-```jsx
-import App from "./App";
-```
-
-The line at the top of the file is importing the code from App.js so index.js has access to the App component.
-
-```jsx
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-
-The render method of ReactDOM is being passed our `<App />` component. The `<React.StrictMode>` gives us better error reporting by activating additional checks and warnings.
-
-13. Save your files and visit the browser. You should see "Hello World" displayed.
-
-14. In VS Code, go back to the file **/src/App.jsx**.
 
 ## Applying CSS Classes
 
